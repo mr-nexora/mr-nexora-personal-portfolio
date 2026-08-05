@@ -1,5 +1,3 @@
-sahan udara
-
 <div align="center">
 
 # 🚀 Personal Portfolio Website
