@@ -1,0 +1,57 @@
+[
+  {
+    "id": "res-01",
+    "title": "Minimalist Web Calculator",
+    "description": "A clean, functional calculator engineered with vanilla JavaScript, keyboard event handling, and CSS Grid layout.",
+    "category": "Mini Projects",
+    "type": "Code Template",
+    "image": "assets/img/work-3.webp",
+    "link": "https://github.com/mr-nexora",
+    "price": "Free",
+    "featured": true
+  },
+  {
+    "id": "res-02",
+    "title": "Modern Interactive Button Pack",
+    "description": "Collection of 20+ CSS-only buttons featuring hover micro-animations, ripple effects, glowing borders, and accessible focus states.",
+    "category": "UI Components",
+    "type": "CSS Component",
+    "image": "assets/img/work-5.webp",
+    "link": "https://github.com/mr-nexora",
+    "price": "Free",
+    "featured": true
+  },
+  {
+    "id": "res-03",
+    "title": "Developer Portfolio Starter Kit",
+    "description": "Lightweight, JSON-driven multi-page portfolio starter with dark mode, search filters, and GitHub Pages deployment configuration.",
+    "category": "Templates",
+    "type": "Website Starter",
+    "image": "assets/img/work-1.webp",
+    "link": "https://github.com/mr-nexora/mr-nexora-personal-portfolio",
+    "price": "Free",
+    "featured": true
+  },
+  {
+    "id": "res-04",
+    "title": "Interactive Canvas Particle Background",
+    "description": "High-performance HTML5 Canvas particle network simulation with responsive mouse tracking and fluid physics.",
+    "category": "Code Experiments",
+    "type": "JavaScript Canvas",
+    "image": "assets/img/work-6.webp",
+    "link": "https://github.com/mr-nexora",
+    "price": "Free",
+    "featured": false
+  },
+  {
+    "id": "res-05",
+    "title": "Web Security Checklist for Developers",
+    "description": "A comprehensive reference sheet covering authentication, input sanitization, CSP headers, and CORS best practices.",
+    "category": "Developer Resources",
+    "type": "Cheat Sheet / Guide",
+    "image": "assets/img/work-4.webp",
+    "link": "https://github.com/mr-nexora",
+    "price": "Free",
+    "featured": true
+  }
+]

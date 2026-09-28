@@ -1,0 +1,14 @@
+{
+  "siteName": "Mr. Nexora | Sahan Udara Portfolio",
+  "shortTitle": "Mr. Nexora",
+  "title": "Sahan Udara (Mr. Nexora) — Full-Stack Developer & Cybersecurity Enthusiast",
+  "description": "Personal portfolio of Sahan Udara (Mr. Nexora) — Computer Science Undergraduate, Full-Stack Web Developer, UI/UX Designer & Technology Enthusiast based in Sri Lanka.",
+  "keywords": "Sahan Udara, Mr. Nexora, Full-Stack Developer, Cybersecurity, Web Developer Sri Lanka, Computer Science Undergraduate, UI UX Designer, Portfolio",
+  "author": "Sahan Udara (Mr. Nexora)",
+  "url": "https://mr-nexora.github.io/mr-nexora-personal-portfolio/",
+  "baseUrl": "./",
+  "favicon": "assets/img/favicon.jpg",
+  "ogImage": "assets/img/home-img.png",
+  "year": 2026,
+  "locale": "en_US"
+}

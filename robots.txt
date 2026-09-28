@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mr-nexora.github.io/mr-nexora-personal-portfolio/sitemap.xml

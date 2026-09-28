@@ -1,0 +1,58 @@
+[
+  {
+    "id": "github",
+    "name": "GitHub",
+    "url": "https://github.com/mr-nexora",
+    "icon": "uil uil-github",
+    "handle": "mr-nexora",
+    "featured": true
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/mrnexora/",
+    "icon": "uil uil-linkedin",
+    "handle": "mrnexora",
+    "featured": true
+  },
+  {
+    "id": "email",
+    "name": "Email",
+    "url": "mailto:mr.nexora.dev@gmail.com",
+    "icon": "uil uil-envelope-alt",
+    "handle": "mr.nexora.dev@gmail.com",
+    "featured": true
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "url": "https://wa.me/94765840479",
+    "icon": "uil uil-whatsapp",
+    "handle": "(+94) 76-584-0479",
+    "featured": true
+  },
+  {
+    "id": "instagram",
+    "name": "Instagram",
+    "url": "https://www.instagram.com/",
+    "icon": "uil uil-instagram",
+    "handle": "@mr.nexora",
+    "featured": false
+  },
+  {
+    "id": "twitter",
+    "name": "Twitter / X",
+    "url": "https://twitter.com/",
+    "icon": "uil uil-twitter-alt",
+    "handle": "@mr_nexora",
+    "featured": false
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook",
+    "url": "https://www.facebook.com/",
+    "icon": "uil uil-facebook-f",
+    "handle": "Sahan Udara",
+    "featured": false
+  }
+]

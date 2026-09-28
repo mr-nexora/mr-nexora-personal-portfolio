@@ -372,43 +372,48 @@ function navHighlighter()
     //Now we loop through sections to get height, top and ID values for each
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 50,
-        sectionId = current.gerAttribute("id");
-        /* - If our current scroll position enters the space where current section on screen is, add active class to corresponding navigation link, else remove it
-        - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as on selector */
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
-        {
-            document.querySelector('.nv_menu a[href*=' + sectionId + ']').classList.add("active-link")
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute("id");
+        if (!sectionId) return;
+
+        const navLink = document.querySelector('.nav_menu a[href*="' + sectionId + '"]');
+        if (navLink) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLink.classList.add("active-link");
+            } else {
+                navLink.classList.remove("active-link");
+            }
         }
-        else
-        {
-            document.querySelector('.nv_menu a[href*=' + sectionId + ']').classList.remove("active-link")
-        }
-    })
+    });
 }
 
 /*=============== FOOTER ===============*/
 document.addEventListener('DOMContentLoaded', function() {
             // Set current year in copyright
-            document.querySelector('.copyright-year').textContent = new Date().getFullYear();
+            const copyrightYear = document.querySelector('.copyright-year');
+            if (copyrightYear) {
+                copyrightYear.textContent = new Date().getFullYear();
+            }
 
             // Back to top button functionality
             const backToTopBtn = document.getElementById('back-to-top');
             
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 300) {
-                    backToTopBtn.classList.add('active');
-                } else {
-                    backToTopBtn.classList.remove('active');
-                }
-            });
-
-            backToTopBtn.addEventListener('click', function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
+            if (backToTopBtn) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTopBtn.classList.add('active');
+                    } else {
+                        backToTopBtn.classList.remove('active');
+                    }
                 });
-            });
+
+                backToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
 
             // Smooth scrolling for footer links
             document.querySelectorAll('.footer-link[href^="#"]').forEach(anchor => {

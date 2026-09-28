@@ -1,0 +1,32 @@
+[
+  {
+    "id": "test-01",
+    "name": "Kavinda Perera",
+    "role": "Computer Science Colleague & Collaborator",
+    "company": "EUSL Campus",
+    "image": "assets/img/client1.jpg",
+    "message": "Sahan has an exceptional eye for both front-end aesthetics and backend security. His ability to break down complex coding challenges into clean, structured architectures is impressive.",
+    "date": "2024-11",
+    "rating": 5
+  },
+  {
+    "id": "test-02",
+    "name": "Dilshan Fernando",
+    "role": "Tech Enthusiast & Community Member",
+    "company": "mr.nexora Audience",
+    "image": "assets/img/client2.jpg",
+    "message": "The digital content and web tutorials Sahan produces under the mr.nexora brand are top quality. He simplifies modern web development concepts with great clarity.",
+    "date": "2024-12",
+    "rating": 5
+  },
+  {
+    "id": "test-03",
+    "name": "Nuwan Jayasuriya",
+    "role": "Web Project Partner",
+    "company": "Independent Project",
+    "image": "assets/img/client3.jpg",
+    "message": "Working with Sahan was effortless. He delivers responsive code on time, communicates proactively, and always ensures security best practices are never compromised.",
+    "date": "2025-01",
+    "rating": 5
+  }
+]

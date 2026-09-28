@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mr-nexora.github.io/mr-nexora-personal-portfolio/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mr-nexora.github.io/mr-nexora-personal-portfolio/more-about.html</loc>
-    <lastmod>2026-08-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://mr-nexora.github.io/mr-nexora-personal-portfolio/about.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mr-nexora.github.io/mr-nexora-personal-portfolio/projects.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mr-nexora.github.io/mr-nexora-personal-portfolio/blog.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mr-nexora.github.io/mr-nexora-personal-portfolio/contact.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

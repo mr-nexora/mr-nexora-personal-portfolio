@@ -1,0 +1,43 @@
+{
+  "name": "Sahan Udara",
+  "fullName": "T.M.S.U. Thennakoon (Sahan Udara)",
+  "brandName": "Mr. Nexora",
+  "title": "Full-Stack Developer & Cybersecurity Enthusiast",
+  "roles": [
+    "Full-Stack Developer",
+    "Computer Science Undergraduate",
+    "UI/UX Designer",
+    "Cybersecurity Enthusiast",
+    "Digital Brand Creator"
+  ],
+  "location": "Mawathagama, Kurunegala, Sri Lanka",
+  "nationality": "Sri Lankan",
+  "dateOfBirth": "30-11-2003",
+  "workStatus": "Student / Undergraduate & Freelance Developer",
+  "freelanceStatus": "Available for Select Opportunities",
+  "email": "mr.nexora.dev@gmail.com",
+  "alternateEmail": "hello@sahanudara.com",
+  "phone": "(+94) 76-584-0479",
+  "whatsapp": "(+94) 76-584-0479",
+  "messenger": "user.SUT1123",
+  "cvUrl": "#contact",
+  "avatar": "assets/img/home-img.png",
+  "aboutImage": "assets/img/about-img.png",
+  "tagline": "Crafting resilient, high-performance web applications and intuitive digital experiences with secure engineering practices.",
+  "shortBio": "I am a Computer Science undergraduate passionate about building secure web applications, sleek user interfaces, and scalable systems. Driven by curiosity in modern software development and cybersecurity, I combine aesthetic craft with robust code.",
+  "fullBio": "I am a Computer Science undergraduate at Eastern University of Sri Lanka with a strong passion for Full-Stack Development and Cybersecurity. As the founder of the digital brand mr.nexora, I blend creative digital media with solid engineering principles. My work revolves around modern web technologies (HTML5, CSS3, JavaScript, React, Node.js, Python, C++, MySQL), secure coding patterns, and intuitive UI/UX design. I believe in writing readable, maintainable code, solving real-world challenges, and continuously pushing the envelope of technology.",
+  "focusAreas": [
+    "Secure Full-Stack Web Development",
+    "Responsive Frontend Engineering & Design Systems",
+    "RESTful APIs & Backend Architecture",
+    "Cybersecurity Fundamentals & Web App Hardening",
+    "UI/UX Prototyping & Digital Branding"
+  ],
+  "interests": [
+    "Web Security & Ethical Hacking",
+    "Open Source Software",
+    "Creative Coding & Micro-Interactions",
+    "Digital Content Creation",
+    "Algorithm Design & Problem Solving"
+  ]
+}

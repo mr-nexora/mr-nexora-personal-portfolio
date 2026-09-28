@@ -1,0 +1,40 @@
+[
+  {
+    "id": "projects",
+    "number": "06+",
+    "label": "Projects Built",
+    "icon": "uil uil-folder-check",
+    "dynamicKey": "totalProjects"
+  },
+  {
+    "id": "code",
+    "number": "10K+",
+    "label": "Lines of Clean Code",
+    "icon": "uil uil-brackets-curly"
+  },
+  {
+    "id": "brands",
+    "number": "05+",
+    "label": "Digital Projects & Brands",
+    "icon": "uil uil-rocket"
+  },
+  {
+    "id": "certificates",
+    "number": "10+",
+    "label": "Certificates & Courses",
+    "icon": "uil uil-award",
+    "dynamicKey": "totalCertifications"
+  },
+  {
+    "id": "degree",
+    "number": "01",
+    "label": "Degree Program (BSc Hons)",
+    "icon": "uil uil-graduation-cap"
+  },
+  {
+    "id": "passion",
+    "number": "100%",
+    "label": "Passion & Dedication",
+    "icon": "uil uil-heart"
+  }
+]

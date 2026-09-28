@@ -1,0 +1,184 @@
+{
+  "categories": [
+    {
+      "id": "frontend",
+      "name": "Frontend Engineering",
+      "icon": "uil uil-brackets-curly",
+      "description": "Building performant, accessible, and responsive user interfaces with modern web standards.",
+      "skills": [
+        {
+          "id": "skill-html",
+          "name": "HTML5 & Semantic Markup",
+          "category": "frontend",
+          "icon": "uil uil-html5",
+          "level": "Advanced",
+          "percentage": 92,
+          "description": "Semantic markup, accessible DOM structures, SEO metadata, and web performance.",
+          "technologies": ["HTML5", "ARIA", "SEO", "Microdata"]
+        },
+        {
+          "id": "skill-css",
+          "name": "CSS3 & Modern Layouts",
+          "category": "frontend",
+          "icon": "uil uil-css3-simple",
+          "level": "Advanced",
+          "percentage": 88,
+          "description": "Flexbox, CSS Grid, custom properties, animations, and responsive architecture.",
+          "technologies": ["CSS Grid", "Flexbox", "Animations", "Tailwind CSS", "SASS"]
+        },
+        {
+          "id": "skill-js",
+          "name": "JavaScript (ES6+)",
+          "category": "frontend",
+          "icon": "uil uil-java-script",
+          "level": "Proficient",
+          "percentage": 82,
+          "description": "Modern asynchronous JavaScript, DOM manipulation, Fetch API, and component design.",
+          "technologies": ["ES6+", "Async/Await", "Promises", "Fetch API", "Event Delegation"]
+        },
+        {
+          "id": "skill-react",
+          "name": "React Ecosystem",
+          "category": "frontend",
+          "icon": "uil uil-react",
+          "level": "Intermediate",
+          "percentage": 75,
+          "description": "Functional components, custom hooks, state management, and SPA routing.",
+          "technologies": ["React.js", "Hooks", "Context API", "Component Architecture"]
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend & Databases",
+      "icon": "uil uil-server-network",
+      "description": "Developing robust APIs, data models, server logic, and query optimization.",
+      "skills": [
+        {
+          "id": "skill-node",
+          "name": "Node.js & Express",
+          "category": "backend",
+          "icon": "uil uil-server",
+          "level": "Intermediate",
+          "percentage": 74,
+          "description": "RESTful API creation, middleware development, static file serving, and auth flows.",
+          "technologies": ["Node.js", "Express", "REST", "JSON APIs"]
+        },
+        {
+          "id": "skill-python",
+          "name": "Python Development",
+          "category": "backend",
+          "icon": "uil uil-code-branch",
+          "level": "Proficient",
+          "percentage": 78,
+          "description": "Scripting, algorithmic solutions, data analysis, and backend logic.",
+          "technologies": ["Python 3", "Data Processing", "Automation", "OOP"]
+        },
+        {
+          "id": "skill-mysql",
+          "name": "MySQL & Relational DBs",
+          "category": "backend",
+          "icon": "uil uil-database",
+          "level": "Proficient",
+          "percentage": 76,
+          "description": "Relational schema design, normalization, joins, indexes, and parameterized queries.",
+          "technologies": ["MySQL", "SQL Queries", "Schema Design", "Transactions"]
+        },
+        {
+          "id": "skill-php",
+          "name": "PHP & Server Scripting",
+          "category": "backend",
+          "icon": "uil uil-file-code-alt",
+          "level": "Intermediate",
+          "percentage": 65,
+          "description": "Dynamic web scripting, database integration, and MVC architectural basics.",
+          "technologies": ["PHP", "PDO", "Server-Side Scripting"]
+        }
+      ]
+    },
+    {
+      "id": "programming",
+      "name": "Core Languages & Systems",
+      "icon": "uil uil-brackets-curly",
+      "description": "Fundamental computer science theory, systems programming, and algorithmic problem-solving.",
+      "skills": [
+        {
+          "id": "skill-cpp",
+          "name": "C++ & Object-Oriented Programming",
+          "category": "programming",
+          "icon": "uil uil-arrow",
+          "level": "Advanced",
+          "percentage": 85,
+          "description": "Pointers, memory management, data structures, algorithms, and OOP principles.",
+          "technologies": ["C++17", "STL", "Data Structures", "Algorithms", "Memory Safety"]
+        },
+        {
+          "id": "skill-linux",
+          "name": "Linux & Bash Scripting",
+          "category": "programming",
+          "icon": "uil uil-terminal",
+          "level": "Proficient",
+          "percentage": 75,
+          "description": "Command line navigation, shell scripting, permissions, and server environments.",
+          "technologies": ["Linux", "Bash", "SSH", "Git CLI"]
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity & Web Hardening",
+      "icon": "uil uil-shield-check",
+      "description": "Implementing defense-in-depth principles, vulnerability assessments, and secure coding.",
+      "skills": [
+        {
+          "id": "skill-web-sec",
+          "name": "Web Application Security",
+          "category": "cybersecurity",
+          "icon": "uil uil-lock-alt",
+          "level": "Intermediate",
+          "percentage": 75,
+          "description": "Mitigating OWASP Top 10 risks: XSS, SQLi, CSRF, insecure direct object references.",
+          "technologies": ["OWASP Top 10", "Input Sanitization", "CSP", "CORS"]
+        },
+        {
+          "id": "skill-network-sec",
+          "name": "Network & Authentication Security",
+          "category": "cybersecurity",
+          "icon": "uil uil-shield",
+          "level": "Intermediate",
+          "percentage": 70,
+          "description": "Secure socket layers (SSL/TLS), hashing (Argon2, bcrypt), and token verification.",
+          "technologies": ["JWT", "Hashing", "Rate Limiting", "TLS/SSL"]
+        }
+      ]
+    },
+    {
+      "id": "uiux",
+      "name": "UI/UX & Creative Design",
+      "icon": "uil uil-swatchbook",
+      "description": "Designing user-centric interfaces, design systems, visual assets, and prototypes.",
+      "skills": [
+        {
+          "id": "skill-figma",
+          "name": "Figma & UI Prototyping",
+          "category": "uiux",
+          "icon": "uil uil-pen",
+          "level": "Proficient",
+          "percentage": 84,
+          "description": "Wireframing, interactive prototyping, auto-layout, and design system components.",
+          "technologies": ["Figma", "Wireframing", "Component Variants", "Prototyping"]
+        },
+        {
+          "id": "skill-branding",
+          "name": "Brand Identity & Graphic Design",
+          "category": "uiux",
+          "icon": "uil uil-palette",
+          "level": "Proficient",
+          "percentage": 80,
+          "description": "Creating distinct digital identities, vector assets, and visual media via mr.nexora.",
+          "technologies": ["Illustrator", "Canva", "Vector Art", "Typography"]
+        }
+      ]
+    }
+  ]
+}

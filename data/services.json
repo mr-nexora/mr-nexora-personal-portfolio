@@ -1,0 +1,92 @@
+[
+  {
+    "id": "srv-01",
+    "title": "Full-Stack Web Development",
+    "description": "Custom end-to-end web applications built with modern frontend frameworks and robust backend services.",
+    "icon": "uil uil-window-grid",
+    "features": [
+      "Custom responsive frontend architecture",
+      "Secure RESTful API integration",
+      "Database schema design and queries",
+      "Production-ready deployment & optimization"
+    ],
+    "technologies": ["HTML5/CSS3", "JavaScript", "React", "Node.js", "MySQL"],
+    "startingPrice": "Flexible / Project Scope",
+    "available": true
+  },
+  {
+    "id": "srv-02",
+    "title": "Modern Frontend & Landing Pages",
+    "description": "High-converting, visually stunning web pages designed with clean code, fast load times, and fluid animations.",
+    "icon": "uil uil-desktop",
+    "features": [
+      "Mobile-first responsive layouts",
+      "CSS Grid & Flexbox micro-interactions",
+      "Cross-browser testing & accessibility (a11y)",
+      "SEO best practices & meta tags optimization"
+    ],
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+    "startingPrice": "Inquire for quote",
+    "available": true
+  },
+  {
+    "id": "srv-03",
+    "title": "UI/UX & Interactive Design",
+    "description": "Transforming concepts into intuitive user journeys, interactive wireframes, and polished design systems.",
+    "icon": "uil uil-swatchbook",
+    "features": [
+      "Figma interactive prototypes",
+      "Component library & design token systems",
+      "User research & ergonomic UI workflows",
+      "Visual assets & icon consistency"
+    ],
+    "technologies": ["Figma", "Design Systems", "Prototyping", "Canva"],
+    "startingPrice": "Inquire for quote",
+    "available": true
+  },
+  {
+    "id": "srv-04",
+    "title": "Web Security & Code Auditing",
+    "description": "Reviewing web applications for vulnerabilities, insecure endpoints, and ensuring secure data handling.",
+    "icon": "uil uil-shield-check",
+    "features": [
+      "OWASP Top 10 vulnerability checks",
+      "Authentication flow & token review",
+      "Input validation & sanitization recommendations",
+      "HTTPS & security headers configuration advice"
+    ],
+    "technologies": ["Web Security", "OWASP", "Authentication", "Secure Coding"],
+    "startingPrice": "Inquire for quote",
+    "available": true
+  },
+  {
+    "id": "srv-05",
+    "title": "Digital Branding & Creator Media",
+    "description": "Developing consistent online brand identities, digital assets, and social presentation through mr.nexora.",
+    "icon": "uil uil-share-alt",
+    "features": [
+      "Digital brand guidelines & color palettes",
+      "Social media graphics & visual headers",
+      "Developer portfolio consultation",
+      "Content strategy for online creators"
+    ],
+    "technologies": ["Brand Strategy", "Vector Design", "Content Creation"],
+    "startingPrice": "Inquire for quote",
+    "available": true
+  },
+  {
+    "id": "srv-06",
+    "title": "Website Maintenance & Performance",
+    "description": "Keeping your web properties updated, fast, secure, and bug-free with proactive monitoring.",
+    "icon": "uil uil-wrench",
+    "features": [
+      "Code refactoring & bug troubleshooting",
+      "Asset compression & Lighthouse speed optimization",
+      "JSON data-driven updates & content changes",
+      "Cross-platform responsiveness fixes"
+    ],
+    "technologies": ["Performance Tuning", "Debugging", "Refactoring"],
+    "startingPrice": "Inquire for quote",
+    "available": true
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "mainNav": [
+    { "label": "Home", "url": "index.html", "id": "home" },
+    { "label": "About", "url": "about.html", "id": "about" },
+    { "label": "Projects", "url": "projects.html", "id": "projects" },
+    { "label": "Services", "url": "index.html#services", "id": "services" },
+    { "label": "Blog", "url": "blog.html", "id": "blog" },
+    { "label": "Resources", "url": "about.html#resources", "id": "resources" },
+    { "label": "Contact", "url": "contact.html", "id": "contact" }
+  ],
+  "quickLinks": [
+    { "label": "Home", "url": "index.html" },
+    { "label": "About Me", "url": "about.html" },
+    { "label": "Portfolio Projects", "url": "projects.html" },
+    { "label": "Technical Skills", "url": "about.html#skills" },
+    { "label": "Qualifications & Certs", "url": "about.html#qualifications" },
+    { "label": "Articles & Insights", "url": "blog.html" },
+    { "label": "Get In Touch", "url": "contact.html" }
+  ],
+  "ctaButton": {
+    "label": "Let's Talk",
+    "url": "contact.html"
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "tool-prompt",
+    "title": "AI Image Prompt Enhancer",
+    "description": "Craft detailed, high-aesthetic prompts for modern AI models with aspect ratio and style presets.",
+    "icon": "uil uil-robot",
+    "category": "AI Tools",
+    "type": "interactive"
+  },
+  {
+    "id": "tool-gradient",
+    "title": "CSS Gradient Studio",
+    "description": "Generate modern multi-stop gradients with one-click CSS copy and live preview container.",
+    "icon": "uil uil-palette",
+    "category": "Design Tools",
+    "type": "interactive"
+  },
+  {
+    "id": "tool-markdown",
+    "title": "Markdown to Clean HTML",
+    "description": "Quickly convert Markdown formatting into semantic HTML with live output inspection.",
+    "icon": "uil uil-document-layout-left",
+    "category": "Developer Tools",
+    "type": "interactive"
+  },
+  {
+    "id": "tool-hash",
+    "title": "Security Text & Hash Inspector",
+    "description": "Calculate character counts, base64 encodes, and inspect text entropy for security tokens.",
+    "icon": "uil uil-shield-check",
+    "category": "Security Tools",
+    "type": "interactive"
+  }
+]

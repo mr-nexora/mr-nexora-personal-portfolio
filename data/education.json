@@ -1,0 +1,26 @@
+[
+  {
+    "id": "edu-01",
+    "institution": "Trincomalee Campus, Eastern University, Sri Lanka (EUSL)",
+    "program": "BSc (Hons) in Computer Science",
+    "field": "Computer Science & Information Technology",
+    "startDate": "2023",
+    "endDate": "2028 (Expected)",
+    "current": true,
+    "location": "Trincomalee, Sri Lanka",
+    "description": "Comprehensive academic degree covering Data Structures & Algorithms, Object-Oriented Programming (C++), Relational Databases (MySQL), Computer Networks, Operating Systems, Web Technologies, and Cybersecurity Foundations.",
+    "website": "https://www.esn.ac.lk/"
+  },
+  {
+    "id": "edu-02",
+    "institution": "University of Moratuwa (CODL)",
+    "program": "Certificate in Full Stack Web Development",
+    "field": "Web Application Architecture & Engineering",
+    "startDate": "2026",
+    "endDate": "Present",
+    "current": true,
+    "location": "Moratuwa, Sri Lanka",
+    "description": "Advanced specialized training focused on practical industry practices: HTML5, CSS3, modern JavaScript, server scripting, database connectivity, and full-stack software development workflows.",
+    "website": "https://uom.lk/"
+  }
+]

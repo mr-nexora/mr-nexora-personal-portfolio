@@ -383,25 +383,30 @@ document.addEventListener('DOMContentLoaded', function() {
         /*===== FOOTER =====*/
         document.addEventListener('DOMContentLoaded', function() {
             // Set current year in copyright
-            document.querySelector('.copyright-year').textContent = new Date().getFullYear();
+            const copyrightYear = document.querySelector('.copyright-year');
+            if (copyrightYear) {
+                copyrightYear.textContent = new Date().getFullYear();
+            }
 
             // Back to top button functionality
             const backToTopBtn = document.getElementById('back-to-top');
             
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 300) {
-                    backToTopBtn.classList.add('active');
-                } else {
-                    backToTopBtn.classList.remove('active');
-                }
-            });
-
-            backToTopBtn.addEventListener('click', function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
+            if (backToTopBtn) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTopBtn.classList.add('active');
+                    } else {
+                        backToTopBtn.classList.remove('active');
+                    }
                 });
-            });
+
+                backToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
 
             // Smooth scrolling for footer links
             document.querySelectorAll('.footer-link[href^="#"]').forEach(anchor => {

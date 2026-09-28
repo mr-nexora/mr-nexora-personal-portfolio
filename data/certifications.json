@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cert-01",
+    "title": "Certificate in Full Stack Web Development",
+    "organization": "University of Moratuwa (Sri Lanka)",
+    "date": "2026",
+    "category": "certification",
+    "certificateId": "UOM-FSWD-2026",
+    "certificateUrl": "https://uom.lk/",
+    "image": "assets/img/work-1.webp",
+    "skills": ["HTML5", "CSS3", "JavaScript", "Database Integration", "Full-Stack"],
+    "description": "Professional training curriculum focused on end-to-end full-stack web engineering, client-server architecture, and robust coding principles."
+  },
+  {
+    "id": "cert-02",
+    "title": "Advanced CSS and Sass Architecture",
+    "organization": "Online Professional Course",
+    "date": "2024",
+    "category": "course",
+    "certificateId": "CERT-CSS-SASS",
+    "certificateUrl": "#",
+    "image": "assets/img/work-2.webp",
+    "skills": ["CSS3", "Sass/SCSS", "Flexbox", "CSS Grid", "Animations"],
+    "description": "Mastery of modern responsive layouts, custom CSS properties, hardware-accelerated animations, and maintainable CSS design systems."
+  },
+  {
+    "id": "cert-03",
+    "title": "Modern JavaScript: ES6+ and Beyond",
+    "organization": "Developer Training Certification",
+    "date": "2024",
+    "category": "course",
+    "certificateId": "CERT-JS-MODERN",
+    "certificateUrl": "#",
+    "image": "assets/img/work-3.webp",
+    "skills": ["JavaScript", "ES6+", "Asynchronous JS", "DOM API", "Fetch"],
+    "description": "Deep dive into event loop mechanics, asynchronous programming with Promises and async/await, closures, and modular JS architecture."
+  },
+  {
+    "id": "cert-04",
+    "title": "Python for Algorithmic Thinking & Data Analysis",
+    "organization": "Academic & Self-Study Milestone",
+    "date": "2023",
+    "category": "certification",
+    "certificateId": "CERT-PY-ALGO",
+    "certificateUrl": "#",
+    "image": "assets/img/work-4.webp",
+    "skills": ["Python", "Algorithms", "Data Analysis", "OOP"],
+    "description": "Exploration of Python data structures, automated scripting, clean algorithmic thinking, and analytical data visualization."
+  },
+  {
+    "id": "cert-05",
+    "title": "UI/UX Design Principles & Prototyping",
+    "organization": "Interactive Design Program",
+    "date": "2023",
+    "category": "course",
+    "certificateId": "CERT-UIUX-FIGMA",
+    "certificateUrl": "#",
+    "image": "assets/img/work-5.webp",
+    "skills": ["Figma", "UI/UX", "Wireframing", "User Research", "WCAG"],
+    "description": "Study of user-centered design, cognitive psychology in interface ergonomics, wireframe iteration, and Figma design tokens."
+  },
+  {
+    "id": "cert-06",
+    "title": "Web Application Security Foundations",
+    "organization": "Cybersecurity Self-Study & Lab Track",
+    "date": "2025",
+    "category": "course",
+    "certificateId": "CERT-SEC-WEB",
+    "certificateUrl": "#",
+    "image": "assets/img/work-6.webp",
+    "skills": ["Web Security", "OWASP Top 10", "Authentication", "Network Protocols"],
+    "description": "Hands-on exploration of web security vulnerabilities, threat modeling, CSRF/XSS defense, and secure backend token handling."
+  }
+]

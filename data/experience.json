@@ -1,0 +1,53 @@
+[
+  {
+    "id": "exp-01",
+    "company": "Independent Developer",
+    "position": "Full-Stack Developer & Security Researcher",
+    "location": "Sri Lanka",
+    "startDate": "2025-01",
+    "endDate": "Present",
+    "current": true,
+    "description": "Architecting modern web solutions, console software suites, and exploring security testing methodologies.",
+    "responsibilities": [
+      "Engineered responsive web applications and modular UI components with vanilla JavaScript and React",
+      "Built performant C++ and Python algorithms for data processing and academic computing",
+      "Implemented OWASP Top 10 mitigation strategies, authentication tokens, and rate-limiting patterns",
+      "Authored clean, maintainable technical documentation and open-source GitHub repositories"
+    ],
+    "technologies": ["JavaScript", "Python", "C++", "React", "Node.js", "Web Security"]
+  },
+  {
+    "id": "exp-02",
+    "company": "mr.nexora",
+    "position": "Founder & Digital Brand Creator",
+    "location": "Sri Lanka",
+    "startDate": "2023-01",
+    "endDate": "Present",
+    "current": true,
+    "description": "Leading an independent creative brand focused on developer technology, digital media, and UI/UX design.",
+    "responsibilities": [
+      "Established brand identity, visual guidelines, typography, and color aesthetics across multiple channels",
+      "Produced technical graphics, developer tutorials, and UI design mockups in Figma and Illustrator",
+      "Designed and maintained brand web properties and public portfolio platforms",
+      "Engaged with a community of technology enthusiasts and junior developers"
+    ],
+    "technologies": ["UI/UX Design", "Figma", "Digital Media", "Branding", "Content Strategy"]
+  },
+  {
+    "id": "exp-03",
+    "company": "Trincomalee Campus, EUSL",
+    "position": "Computer Science Academic Project Contributor",
+    "location": "Trincomalee, Sri Lanka",
+    "startDate": "2023-08",
+    "endDate": "Present",
+    "current": true,
+    "description": "Active participant in undergraduate laboratory projects, peer programming, and technical problem-solving assignments.",
+    "responsibilities": [
+      "Collaborated on software engineering coursework involving relational database design in MySQL",
+      "Developed object-oriented programs and data structures in C++ with rigorous test suites",
+      "Researched computer network protocols, operating system concepts, and computational theory",
+      "Delivered structured project presentations and technical write-ups"
+    ],
+    "technologies": ["C++", "MySQL", "Computer Networks", "Algorithms", "Software Engineering"]
+  }
+]
