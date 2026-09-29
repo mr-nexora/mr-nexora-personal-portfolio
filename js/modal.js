@@ -5,6 +5,8 @@
 
 import { loadData } from './data-loader.js';
 import { formatDate, escapeHTML } from './utils.js';
+import { renderArticleContent } from './blog-content.js';
+import { createShareSection, applyArticleSEO, restoreArticleSEO } from './blog-share.js';
 
 let modalBackdrop = null;
 let modalDialog = null;
@@ -35,6 +37,7 @@ export function initModalSystem() {
     modalBackdrop.classList.remove('open');
     modalBackdrop.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    restoreArticleSEO();
   };
 
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
@@ -190,6 +193,9 @@ export async function openBlogModal(blogId) {
   const post = posts.find(p => p.id === blogId || p.slug === blogId);
   if (!post) return;
 
+  // Apply dynamic SEO tags and update URL parameter
+  applyArticleSEO(post);
+
   const modalBody = modalBackdrop.querySelector('.modal-body');
 
   const tagsHtml = (post.tags || []).map(t => 
@@ -202,7 +208,7 @@ export async function openBlogModal(blogId) {
       <span style="font-size: var(--text-xs); color: var(--text-muted);"><i class="uil uil-clock"></i> ${escapeHTML(post.readingTime || '5 min read')}</span>
     </div>
 
-    <h2 class="section-title" style="font-size: var(--text-2xl); margin-bottom: 12px;">${escapeHTML(post.title)}</h2>
+    <h2 class="section-title" style="font-size: var(--text-2xl); margin-bottom: 12px; line-height: 1.3;">${escapeHTML(post.title)}</h2>
 
     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px; font-size: var(--text-xs); color: var(--text-muted);">
       <span><i class="uil uil-user"></i> ${escapeHTML(post.author)}</span>
@@ -210,34 +216,51 @@ export async function openBlogModal(blogId) {
       <span><i class="uil uil-calender"></i> ${formatDate(post.date)}</span>
     </div>
 
-    <img src="${escapeHTML(post.image)}" alt="${escapeHTML(post.title)}" class="modal-project-img" style="max-height: 280px;" onerror="this.src='assets/img/work-1.webp'">
+    <img src="${escapeHTML(post.image)}" alt="${escapeHTML(post.title)}" class="modal-project-img" style="max-height: 280px; width:100%; object-fit:cover;" onerror="this.src='assets/img/work-1.webp'">
 
-    <div style="font-size: var(--text-base); color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
-      <p style="font-size: var(--text-lg); font-weight: 500; color: var(--text-primary); margin-bottom: 16px;">
-        ${escapeHTML(post.excerpt)}
-      </p>
-      <div style="white-space: pre-line;">
-        ${escapeHTML(post.content)}
-      </div>
+    <div class="article-lead-excerpt" style="font-size: var(--text-lg); font-weight: 500; color: var(--text-primary); margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border-color); line-height: 1.6;">
+      ${escapeHTML(post.excerpt)}
     </div>
 
+    <!-- Structured Content Container (appended programmatically) -->
+    <div class="article-rendered-body" style="margin-bottom: 32px;"></div>
+
     <div style="margin-bottom: 24px;">
-      <h3 class="modal-section-title">Topics</h3>
+      <h3 class="modal-section-title">Topics &amp; Tags</h3>
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
         ${tagsHtml}
       </div>
     </div>
+
+    <!-- Social Share Section Container (appended programmatically) -->
+    <div class="article-share-placeholder" style="margin-bottom: 24px;"></div>
 
     <div style="display: flex; justify-content: flex-end; padding-top: 16px; border-top: 1px solid var(--border-color);">
       <button class="btn btn-secondary modal-close-btn-bottom">Close Article</button>
     </div>
   `;
 
+  // Safely insert structured content
+  const renderedContentContainer = modalBody.querySelector('.article-rendered-body');
+  if (renderedContentContainer) {
+    const contentNode = renderArticleContent(post.content);
+    renderedContentContainer.appendChild(contentNode);
+  }
+
+  // Insert social share section
+  const sharePlaceholder = modalBody.querySelector('.article-share-placeholder');
+  if (sharePlaceholder) {
+    const shareNode = createShareSection(post);
+    sharePlaceholder.appendChild(shareNode);
+  }
+
   const bottomClose = modalBody.querySelector('.modal-close-btn-bottom');
   if (bottomClose) {
     bottomClose.addEventListener('click', () => {
       modalBackdrop.classList.remove('open');
+      modalBackdrop.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
+      restoreArticleSEO();
     });
   }
 

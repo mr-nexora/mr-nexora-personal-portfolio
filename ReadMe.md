@@ -118,16 +118,18 @@ Open `data/projects.json` and append a new object to the array:
 - **Edit**: In `data/projects.json`, change any field (e.g., set `"featured": false` or change `"title"`).
 - **Remove**: Simply delete the project object from the array in `data/projects.json`.
 
-### 3. How to Add a Blog Post
-Open `data/blog.json` and add:
+### 3. How to Create & Manage Blog Articles
 
+All blog content is stored in **`data/blog.json`**. The blog system supports both **legacy plain text** and **rich structured content blocks**, alongside automatic **social sharing** and **Copy Link** capabilities.
+
+#### A. Basic Article Schema
+Each article object in `data/blog.json` contains:
 ```json
 {
   "id": "blog-06",
   "title": "Understanding Linux Kernel Namespaces",
   "slug": "understanding-linux-kernel-namespaces",
-  "excerpt": "A deep dive into how container runtimes isolate processes using cgroups and namespaces.",
-  "content": "Linux namespaces form the foundational backbone of containerization...",
+  "excerpt": "A short summary shown on blog cards and used for social sharing and SEO meta descriptions.",
   "category": "Cybersecurity",
   "tags": ["Linux", "Containers", "Security"],
   "image": "assets/img/work-6.webp",
@@ -135,9 +137,116 @@ Open `data/blog.json` and add:
   "date": "2026-01-10",
   "readingTime": "5 min read",
   "featured": false,
-  "published": true
+  "published": true,
+  "content": [ ...structured blocks or plain text string... ]
 }
 ```
+
+#### B. Supported Content Blocks
+
+##### 1. Paragraph with Inline Links & Formatting
+You can pass a simple string or an array of formatted inline segments:
+```json
+{
+  "type": "paragraph",
+  "content": [
+    { "type": "text", "text": "Visit my open-source projects on " },
+    { "type": "link", "text": "GitHub (@mr-nexora)", "url": "https://github.com/mr-nexora", "target": "_blank" },
+    { "type": "text", "text": " and read the documentation with " },
+    { "type": "bold", "text": "high-performance" },
+    { "type": "text", "text": " code samples." }
+  ]
+}
+```
+*Note: Strings also support standard markdown syntax: `**bold**`, `*italic*`, `` `code` ``, and `[text](url)`!*
+
+##### 2. Headings (Level 2, 3, or 4)
+```json
+{
+  "type": "heading",
+  "level": 2,
+  "text": "Deep Dive into Modern Web Security"
+}
+```
+
+##### 3. Lists (Unordered or Ordered)
+```json
+{
+  "type": "list",
+  "style": "unordered",
+  "items": [
+    "Content Security Policy (CSP)",
+    "Strict Cross-Origin Resource Sharing (CORS)",
+    "Parameterized SQL statements"
+  ]
+}
+```
+*(For numbered lists, set `"style": "ordered"`)*
+
+##### 4. Code Blocks (with Language & Copy Button)
+```json
+{
+  "type": "code",
+  "language": "javascript",
+  "code": "async function fetchData() {\n  const res = await fetch('./data/blog.json');\n  return await res.json();\n}"
+}
+```
+
+##### 5. Quotes / Blockquotes
+```json
+{
+  "type": "quote",
+  "text": "Simplicity is prerequisite for reliability.",
+  "author": "Edsger W. Dijkstra"
+}
+```
+
+##### 6. Images with Captions
+```json
+{
+  "type": "image",
+  "src": "assets/img/work-1.webp",
+  "alt": "Architecture diagram",
+  "caption": "Figure 1: Client-side data flow architecture"
+}
+```
+
+##### 7. Callout Boxes
+```json
+{
+  "type": "callout",
+  "variant": "tip",
+  "title": "Pro Tip",
+  "text": "Use relative paths like ./data/ to ensure complete GitHub Pages compatibility."
+}
+```
+*(Supported variants: `"info"`, `"tip"`, `"warning"`)*
+
+##### 8. Dividers
+```json
+{
+  "type": "divider"
+}
+```
+
+##### 9. Block Link / CTA Button
+```json
+{
+  "type": "link",
+  "text": "Explore Full Source on GitHub",
+  "url": "https://github.com/mr-nexora",
+  "target": "_blank"
+}
+```
+
+---
+
+#### C. Social Sharing & Copy Link
+Every article automatically generates a **Share this article** footer bar in the article reader modal:
+- **LinkedIn, Twitter / X, Facebook, WhatsApp, Email**: Dynamically pre-populates official share links with the article's URL, title, and excerpt.
+- **Copy Link**: Copies the canonical URL (`blog.html?post=article-slug`) to clipboard and flashes a green checkmark + toast notification.
+- **Deep Linking**: Visiting `blog.html?post=my-article-slug` directly opens the reader modal automatically!
+- **Dynamic SEO**: Opening an article dynamically updates `document.title`, `meta[name="description"]`, OpenGraph tags (`og:title`, `og:description`, `og:image`, `og:url`), and Twitter cards. Closing the modal restores original page metadata.
 
 ### 4. How to Add or Update a Skill
 Open `data/skills.json`. Find the category (e.g. `frontend`, `backend`, `cybersecurity`) and update the percentage or add a new skill object:

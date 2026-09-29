@@ -4,7 +4,98 @@
     "title": "Architecting Zero-Dependency, JSON-Driven Web Portfolios",
     "slug": "architecting-json-driven-web-portfolios",
     "excerpt": "How separating portfolio content into structured JSON files enables instant updates without touching HTML templates or spinning up complex databases.",
-    "content": "When creating a developer portfolio, many engineers either hard-code content directly into HTML files—resulting in painful duplicate maintenance—or reach for heavy full-stack frameworks with database dependencies. A JSON-driven static architecture strikes the ultimate sweet spot. By treating JSON files as the single source of truth and using modular vanilla JavaScript to fetch and render components on the client, a portfolio gains exceptional performance, zero hosting costs on GitHub Pages, and frictionless content editing. In this article, we examine the data loader pattern, DOM fragment rendering, and defensive error boundaries.",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "text": "When building a personal developer portfolio, engineers often face an architectural dilemma: hard-code everything directly inside static HTML files—leading to painful duplicate maintenance—or spin up complex server-side frameworks with relational databases. A " },
+          { "type": "bold", "text": "JSON-driven static architecture" },
+          { "type": "text", "text": " strikes the ideal balance of speed, maintainability, and zero hosting costs on " },
+          { "type": "link", "text": "GitHub Pages", "url": "https://pages.github.com/", "target": "_blank" },
+          { "type": "text", "text": "." }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Core Principles of Single Source of Truth"
+      },
+      {
+        "type": "paragraph",
+        "text": "By treating structured JSON files as the exclusive data source, the UI becomes a purely declarative presentation layer. Updating an article, adding a project, or changing a skill requires editing exactly one file in `/data/`."
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Complete separation of presentation (HTML/CSS) from data (JSON)",
+          "Instant client-side updates without rebuilds or server compilation",
+          "Ultra-fast static asset delivery with browser caching",
+          "Zero maintenance database infrastructure"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Implementation: The Safe Data Loader Pattern"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "text": "In our architecture, the " },
+          { "type": "code", "text": "data-loader.js" },
+          { "type": "text", "text": " module caches fetch responses in memory. Here is how clean and concise the asynchronous data fetching pattern is in modern Vanilla JavaScript:" }
+        ]
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "code": "const cache = new Map();\n\nexport async function loadData(fileName) {\n  if (cache.has(fileName)) {\n    return cache.get(fileName);\n  }\n  const response = await fetch(`./data/${fileName}.json`);\n  if (!response.ok) throw new Error(`HTTP ${response.status}`);\n  const data = await response.json();\n  cache.set(fileName, data);\n  return data;\n}"
+      },
+      {
+        "type": "callout",
+        "variant": "tip",
+        "title": "Architectural Tip",
+        "text": "Always ensure relative paths (like `./data/`) are used so that the portfolio runs flawlessly both on localhost and inside GitHub Pages subdirectories."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key Steps to Structured Article Creation"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          "Define your article metadata (title, slug, date, author, tags) in data/blog.json",
+          "Compose your thoughts using modular content blocks (paragraphs, code, lists)",
+          "Add inline links and callouts to emphasize key takeaways",
+          "Open your browser to preview changes immediately with zero build steps"
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "Simplicity is prerequisite for reliability. Building clean systems with zero dependencies fosters long-term durability.",
+        "author": "Edsger W. Dijkstra"
+      },
+      {
+        "type": "image",
+        "src": "assets/img/work-1.webp",
+        "alt": "JSON-driven architecture diagram showcase",
+        "caption": "Figure 1: Modular component rendering flow from JSON data to client DOM"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "text": "Explore more open-source web experiments and portfolio source code directly on my " },
+          { "type": "link", "text": "GitHub profile (@mr-nexora)", "url": "https://github.com/mr-nexora", "target": "_blank" },
+          { "type": "text", "text": "." }
+        ]
+      }
+    ],
     "category": "Architecture",
     "tags": ["JavaScript", "JSON", "Web Architecture", "Frontend", "Performance"],
     "image": "assets/img/work-1.webp",

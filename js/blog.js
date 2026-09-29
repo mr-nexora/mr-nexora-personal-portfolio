@@ -84,6 +84,18 @@ export async function initBlogPage() {
 
   updateBlogView();
 
+  // Handle URL deep-linking (?post=slug-or-id) for shared articles
+  const urlParams = new URLSearchParams(window.location.search);
+  const postParam = urlParams.get('post');
+  if (postParam) {
+    const targetPost = posts.find(p => p.id === postParam || p.slug === postParam);
+    if (targetPost) {
+      setTimeout(() => {
+        openBlogModal(targetPost.id);
+      }, 150);
+    }
+  }
+
   if (searchInput) {
     searchInput.addEventListener('input', debounce((e) => {
       searchQuery = e.target.value;
